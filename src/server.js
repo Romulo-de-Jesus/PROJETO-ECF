@@ -70,6 +70,17 @@ app.get("/script", (req,res) =>{
     res.sendFile(path.join(__dirname + "/public/js/script.js"))
 })
 
+app.delete("/excluir", (res, req) =>{
+    const id = req.body.id_e
+    bd.query("DELETE FROM matriculas WHERE ID=?", id, (err, results) => {
+        if(err) {
+            res.send("Os dados não foram excluidos")
+        } else {
+            res.send("Dados excluidos com sucesso")
+        }
+    })
+})
+
 app.listen(port, () => {
     console.log("O servidor está no ar!")
 })
