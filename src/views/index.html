@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="/script"></script>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div>
+        <header>
+            <div class="coluna">
+             <img id="ecf" src="/logo.png" alt="logo"> 
+             <h1 id="f_branca">ECF</h1>  
+            </div>
+            <div class="coluna">
+            <li >
+                <ul>Home</ul>
+                <ul>Sobre nós</ul>
+                <ul>Contato</ul>
+                <ul>Professores</ul>
+                <ul>Turmas</ul>
+            </li> 
+            </div>
+
+        </header>
+        <div id="div_matricula">
+            <p>Matricule-se</p>
+
+            <form action="/matricular" method="post" id="form_mat">
+                <input type="text" placeholder="Nome completo" name="nome">
+                <input type="text" placeholder="CPF" name="cpf">
+                <input type="text" placeholder="Data de Nascimento">
+                <input type="email" placeholder="Email principal" name="email">
+                <input type="tel" placeholder="Telefone ou celular" name="telefone">
+                <input type="submit" name="email" id="btn_sub_mat">
+            </form>
+            <button id="btn_sair_matricula" onclick="sair_ma()">Sair</button>
+        </div>
+        <div id="div_agendamento">
+            <p>Agende uma visita</p>
+
+            <form action="" method="">
+                <input type="text" placeholder="Nome completo">
+                <input type="text" placeholder="CPF">
+                <input type="email" placeholder="Email principal">
+                <input type="tel" placeholder="Telefone ou celular">
+                <input type="datetime" placeholder="Data">
+                <input type="submit" value="Agendar" id="btn_sub_age">
+            </form>
+            <button id="btn_sair_agendamento" onclick="sair_age()">Sair</button>
+
+        </div>
+        <section>
+            <div class="coluna2">
+                <h3>Nota 10 no MEC</h3>
+                <h2>ECF</h2>
+                <p>No coração pulsante da criação cinematográfica, surge a Escola Cinematográfica de Filmagens, conhecida carinhosamente como ECF. Nossa história começou em 2005, quando o cineasta visionário Cleber Site Silva transformou sua paixão por contar histórias em uma visão: criar um espaço único para cultivar talentos e transformar amantes do cinema em contadores de histórias extraordinários.</p>
+
+                <div class="coluna3" onclick="entrar_ma()"><button id="azul">Matricule-se</button></div>
+                <div class="coluna3" onclick="entrar_age()"><button id="branco">Agende uma Visita</button></div>
+
+            </div>
+            <div class="coluna2">
+                <img id="garota" src="/gar.png" alt="estudante">
+            </div>
+        </section>
+        <footer>
+
+        </footer>
+    </div>
+
+
+</body>
+</html>
