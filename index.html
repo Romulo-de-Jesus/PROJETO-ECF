@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -37,7 +37,7 @@
                 <input type="tel" placeholder="Telefone ou celular" name="telefone">
                 <input type="submit" name="email" id="btn_sub_mat">
             </form>
-            <button id="btn_sair_matricula">Sair</button>
+            <button id="btn_sair_matricula" onclick="sair_ma()">Sair</button>
         </div>
         <div id="div_agendamento">
             <p>Agende uma visita</p>
@@ -50,7 +50,7 @@
                 <input type="datetime" placeholder="Data">
                 <input type="submit" value="Agendar" id="btn_sub_age">
             </form>
-            <button id="btn_sair_agendamento">Sair</button>
+            <button id="btn_sair_agendamento" onclick="sair_age()">Sair</button>
 
         </div>
         <section>
@@ -59,8 +59,8 @@
                 <h2>ECF</h2>
                 <p>No coração pulsante da criação cinematográfica, surge a Escola Cinematográfica de Filmagens, conhecida carinhosamente como ECF. Nossa história começou em 2005, quando o cineasta visionário Cleber Site Silva transformou sua paixão por contar histórias em uma visão: criar um espaço único para cultivar talentos e transformar amantes do cinema em contadores de histórias extraordinários.</p>
 
-                <div class="coluna3"><h1 id="azul">Matricule-se</h1></div>
-                <div class="coluna3"><h1 id="branco">Agende uma Visita</h1></div>
+                <div class="coluna3" onclick="entrar_ma()"><h1 id="azul">Matricule-se</h1></div>
+                <div class="coluna3" onclick="entrar_age()"><h1 id="branco">Agende uma Visita</h1></div>
 
             </div>
             <div class="coluna2">
