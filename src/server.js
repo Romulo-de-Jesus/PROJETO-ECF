@@ -29,13 +29,21 @@ app.post("/criar", (req, res) => {
     const dn = req.body.dn_m
     const email = req.body.email_m
     const telefone = req.body.telefone_m
+
+    const values = {nome, cpf, dn, email, telefone }
     console.log(nome)
     console.log(cpf)
     console.log(dn)
     console.log(email)
     console.log(telefone)
 
-    bd.query("INSERT INTO")
+    bd.query("INSERT INTO matriculas(nome, cpf, dn, email, telefone) VALUES(?, ?, ?, ?, ?) ", values, (err, results) =>{
+        if (err) {
+            res.send("Erro ao inserir dados no MySQL")
+        } else {
+            res.send("Dados inseridos com sucesso")
+        }
+    })
 
 })
 
